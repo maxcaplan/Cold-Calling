@@ -18,7 +18,7 @@ An Electronic Literature project.
 * 3.5mm TRRS Audio Plug <sup>3</sup>
 
 
->1. It is likely that your phones internals will vary, however the phone should work as long as all the electronics are easily accessible and the dial uses >electric pulses to input numbers. This will be covered more thoroughly later
+>1. It is likely that your phones internals will vary from other models, however the phone should work as long as all the electronics are easily accessible and the dial uses >electric pulses to input numbers. This will be covered more thoroughly later
 
 >2. Depending on the internals of your particular phone you may be able to use the built in switch for the handset hook/cradle, otherwise you will have to >mount your own switch to the inside of the phone that gets pressed by the handset hook/cradle
 
@@ -32,5 +32,5 @@ An Electronic Literature project.
 ----
 
 ## Important Notes:
-* Audio files are not currently avaliable throught this repository
-* All audio files must be within the subfolder ./Audio/
+* Audio files are not currently available through this repository
+* All audio files must be within the subfolder `Audio/`
