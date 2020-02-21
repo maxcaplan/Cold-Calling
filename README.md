@@ -1,13 +1,26 @@
 # Cold-Calling
 An Electronic Literature project.
 
-----
 
-## Documentation
+# Documentation
 
 ***Work in progress***
 
-### Materials:
+----
+
+## Table of Contents
+- [Materials](#Materials)
+- [Build](#Build)
+  * [Software](#Software)
+    + [Raspbian](#Raspbian) 
+      * [Headless](#Headless)
+      * [Desktop](#Desktop)
+    + [Python and Packages](#Python)
+- [Notes](#Notes)
+
+----
+
+## Materials:
 
 * Raspberry Pi 3
 * Raspberry Pi graded PSU 
@@ -27,14 +40,14 @@ An Electronic Literature project.
 
 ---
 
-## Build:
+# Build:
 
-### Software
+## Software
 
 The first step is to load the Raspberry Pi with all the required software, starting with the OS. <br>
 For this project Raspbian Lite was used in a headless configuration, this means the OS has no GUI and is only interfaced with through the command line. If you are not comfortable with the linux terminal or prefer working in a graphical environment than you can use the normal desktop configuration of Raspbian on your Raspberry Pi, however, this will require an external monitor and keyboard.
 
-### Configuring Raspbian:
+### Raspbian:
 
 #### Headless
 First, download a copy of the latest version of Raspbian Lite [here](https://www.raspberrypi.org/downloads/raspbian/). <br><br> 
@@ -111,10 +124,29 @@ If you'd rather a regular desktop configuration of Raspbian then download the la
 
 ----
 
+### Python
+
+This project is built with Python so we need to make sure we have the proper packages installed to run the provided scripts<br>
+first run the command `sudo apt-get update` to make sure everything is up to date<br><br>
+
+Next we need to check that the proper version of python is installed. This project uses Python 3, so we need to check that it's installed by running the command `python3 --version`. This should output something similar to the following:
+
+```bash
+Python 3.x.x
+```
+
+If it returns `Command 'python3' not found` or something similar, then run the command `sudo apt-get install python3` <br><br>
+
+Now we need to install PIP to manage our python packages. To do this, run the command `sudo apt install python3-pip` <br><br>
+
+To install the necessary python package run the command `pip install pygame`
+
+----
+
 <img src="./assets/wiring_diagram.png" alt="Markdown Monster icon" width="800"/>
 
 ----
 
-## Important Notes:
+## Notes:
 * Audio files are not currently available through this repository
 * All audio files must be within the subfolder `Audio/`
