@@ -16,6 +16,7 @@ An Electronic Literature project.
       * [Headless](#Headless)
       * [Desktop](#Desktop)
     + [Python and Packages](#Python)
+  * [Wiring](#Wiring)
 - [Notes](#Notes)
 
 ----
@@ -142,7 +143,9 @@ Now we need to install PIP to manage our python packages. To do this, run the co
 To install the necessary python package run the command `pip install pygame`
 
 ----
+## Wiring
 
+A general wiring diagram for a Raspberry Pi's interface with a phone: <br> 
 <img src="./assets/wiring_diagram.png" alt="Markdown Monster icon" width="800"/>
 
 ----
